@@ -6,9 +6,11 @@ export function Input() {
 
         <>
             <View style={styles.container}>
+                <View style={{paddingTop:50}}>
                 <Text style={styles.text}>
                     Login
                 </Text>
+                </View>
             </View>
 
 
@@ -17,8 +19,9 @@ export function Input() {
                     style={styles.input}
                     placeholder="Digite seu nome"
                     placeholderTextColor="#2A65C8"
-
+                    
                 />
+
                 <View style={styles.container}>
                     <Text style={styles.text}>
                         Senha

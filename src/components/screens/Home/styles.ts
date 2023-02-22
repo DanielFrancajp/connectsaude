@@ -4,25 +4,33 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    LogoHome: {
-        marginVertical: '10%',
-        marginHorizontal: '29%',
-    },
-    formButton: {
 
-        margin: 30
-    },
-    logoBackground: {
-        height: 10,
-        width: 10
-    },
-    buttonRegister: {
+    Form: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20
+
+    },
+    buttonRegister: {
+        flexDirection: 'row',
+        paddingRight: 10,
+        paddingBottom: 10,
+
     },
     text: {
-        color: '#2A65C8'
+        color: '#2A65C8',
+        paddingLeft: 10,
+        fontSize: 16
+    },
+    Logos: {
+        flex: 1,
+        flexDirection: 'row',
+        marginHorizontal: 10,
+        marginVertical: 100,
+        justifyContent: 'space-between'
+    },
+    background: {
+        flex: 1,
+       
     }
 
 
