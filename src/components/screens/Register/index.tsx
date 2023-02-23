@@ -7,10 +7,10 @@ import {
 } from 'react-native'
 
 import { styles } from "./styles";
-import { Header } from "../../../Header";
-import { Input } from "../../../Input";
-import { Button } from "../../../Button";
-import { ImgBackGround } from '../../../imgBackGround'
+import { Header } from "../../Header";
+import { Input } from "../../Input";
+import { Button } from "../../Button";
+import { ImgBackGround } from '../../imgBackGround'
 
 export function Register() {
     return (
