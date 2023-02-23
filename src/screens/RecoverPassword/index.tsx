@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
     View,
-    Text
+    Text,
 }
     from 'react-native'
-import { Button } from '../../Button'
-
-import { Header } from '../../Header'
-import { Input } from '../../Input'
 import { styles } from './styles'
-import { ImgBackGround } from '../../imgBackGround'
+
+import { Button } from '../../components/Button'
+import { Header } from '../../components/Header'
+import { Input } from '../../components/Input'
+import { ImgBackGround } from '../../components/imgBackGround'
 
 export function RecoveryPassoword() {
+
     return (
         <>
             <ImgBackGround>
