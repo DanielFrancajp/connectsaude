@@ -11,9 +11,6 @@ export function Button() {
 
         <View style={styles.containerButton}>
             <TouchableOpacity style={styles.button}>
-                <Text style={styles.text}>
-                    Entrar
-                </Text>
             </TouchableOpacity>
         </View>
 

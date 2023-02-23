@@ -7,12 +7,12 @@ export const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: '#2A65C8',
-        padding: 12,
+        padding: 22,
         alignContent: 'center',
         justifyContent: 'center',
         borderRadius: 12,
-        margin:30
-
+        margin:30,
+        marginTop:10
     },
     text: {
         color: '#FFF',

@@ -20,10 +20,7 @@ export const styles = StyleSheet.create({
         marginRight: 30,
         marginBottom: 10
     },
-    text: {
-        color: '#5697BF',
-        fontSize: 16,
-        fontWeight: 'bold',
-    }
+   
+    
 })
 

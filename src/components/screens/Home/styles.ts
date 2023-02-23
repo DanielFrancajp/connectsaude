@@ -4,22 +4,38 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    containerInput: {
+        width: '100%',
+    },
 
     Form: {
         alignItems: 'center',
         justifyContent: 'center',
-
     },
-    buttonRegister: {
-        flexDirection: 'row',
-        paddingRight: 10,
-        paddingBottom: 10,
-
+    textEnter: {
+        color: '#FFF',
+        fontSize: 16,
+        fontWeight: 'bold',
     },
     text: {
         color: '#2A65C8',
         paddingLeft: 10,
-        fontSize: 16
+        fontSize: 16,
+        fontWeight: 'bold'
+    },
+
+    buttonRegister: {
+        flexDirection: 'row',
+        paddingRight: 10,
+        paddingBottom: 10,
+    },
+
+    iconEye: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginLeft: 290,
+        marginTop: -50
+
     },
     Logos: {
         flex: 1,
@@ -30,7 +46,7 @@ export const styles = StyleSheet.create({
     },
     background: {
         flex: 1,
-       
+
     }
 
 
