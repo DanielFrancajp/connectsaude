@@ -1,9 +1,15 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 import Home from "./src/components/screens/Home";
-import { Register } from './src/components/screens/Home/Register';
 
 export default function App() {
   return (
-    <Register />
+    <>
+      <StatusBar
+        backgroundColor={'#2A65C8'}
+        
+      />
+      <Home />
+    </>
   )
 }

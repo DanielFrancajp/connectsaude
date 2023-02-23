@@ -1,15 +1,26 @@
+import React, { useState } from "react"
 import { TextInput, View } from "react-native";
 import { styles } from "./styles";
 
-export function Input() {
+
+interface placeHolderProps {
+    placeHolder: string;
+}
+
+export function Input({ placeHolder }: placeHolderProps) {
+
+    const [color, setColor] = useState("")
+
+
     return (
 
 
         <View>
             <TextInput
-                style={styles.input}
-                placeholder="Digite seus dados aqui"
+                style={[styles.input, { opacity: color != "" ? 1 : 0.7 }]}
+                placeholder={placeHolder}
                 placeholderTextColor="#2A65C8"
+                onChangeText={setColor}
             />
 
         </View>

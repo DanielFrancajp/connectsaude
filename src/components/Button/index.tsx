@@ -6,11 +6,16 @@ import {
     View
 } from "react-native";
 
-export function Button() {
+interface buttonProps {
+    button: string;
+}
+
+export function Button({ button }: buttonProps) {
     return (
 
         <View style={styles.containerButton}>
             <TouchableOpacity style={styles.button}>
+                <Text style={styles.text}>{button}</Text>
             </TouchableOpacity>
         </View>
 

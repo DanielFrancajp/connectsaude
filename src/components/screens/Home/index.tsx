@@ -5,27 +5,26 @@ import {
     TouchableOpacity,
     View,
     Text,
-    ImageBackground
 } from "react-native";
 import { styles } from './styles'
-
-import { Header } from '../../Header'
 
 import { UserPlus, EyeSlash } from 'phosphor-react-native'
 import { Input } from "../../Input";
 import { Button } from "../../Button";
+import { ImgBackGround } from "../../imgBackGround";
 
 export default function Home() {
     return (
 
         <>
-            <ImageBackground
-                source={require('../../../../assets/background.png')}
-                style={styles.background}
-            >
+            <ImgBackGround >
                 <View style={styles.container}>
 
-                    <Header />
+                <View style={styles.imageLogin}>
+            <Image
+                source={require("../../../../assets/Logo.png")}                
+            />
+        </View>
 
                     <View>
                         <View style={styles.containerInput}>
@@ -34,7 +33,9 @@ export default function Home() {
                                     Login
                                 </Text>
                             </View>
-                            <Input />
+                            <Input
+                                placeHolder="Digite seu nome "
+                            />
                         </View>
 
                         <View>
@@ -44,7 +45,9 @@ export default function Home() {
                                         Senha
                                     </Text>
                                 </View>
-                                <Input />
+                                <Input
+                                    placeHolder="Digite sua senha "
+                                />
                             </View>
                         </View>
 
@@ -55,15 +58,14 @@ export default function Home() {
                         </View>
 
                         <View style={{ justifyContent: "center", alignItems: 'center' }}>
-                            <Text >
-                                Entrar
-                            </Text>
-                            <Button />
+                            <Button
+                                button={"Entrar"}
+                            />
                         </View>
 
                         <View style={styles.Form}>
                             <TouchableOpacity style={styles.buttonRegister}>
-                                <UserPlus color="#5697BF" size={24} />
+                                <UserPlus color="#5697BF" size={24} weight="fill" />
                                 <Text style={styles.text}>
                                     Cadastre-se
                                 </Text>
@@ -83,11 +85,9 @@ export default function Home() {
                         <View style={styles.Logos}>
                             <Image
                                 source={require("../../../../assets/logosus.png")}
-                                style={{ marginLeft: 20 }}
                             />
                             <Image
                                 source={require("../../../../assets/estadopb.png")}
-                                style={{ marginLeft: 10 }}
                             />
                             <Image
                                 source={require("../../../../assets/prefeiturajp.png")}
@@ -95,7 +95,7 @@ export default function Home() {
                         </View>
                     </View>
                 </View>
-            </ImageBackground>
+            </ImgBackGround>
 
         </>
 

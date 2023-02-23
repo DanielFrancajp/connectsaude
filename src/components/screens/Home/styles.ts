@@ -42,12 +42,13 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         marginHorizontal: 10,
         marginVertical: 100,
-        justifyContent: 'space-between'
+        justifyContent: 'space-around'
     },
-    background: {
-        flex: 1,
-
+    imageLogin: {
+        alignItems: "center", 
+        justifyContent: 'center',
+        marginTop: 30
     }
-
+  
 
 })
