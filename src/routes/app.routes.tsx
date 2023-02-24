@@ -19,14 +19,17 @@ export function AppRoutes() {
                 name="recoverypassword"
                 component={RecoveryPassoword}
             />
+
             <Screen
                 name='register'
                 component={Register}
             />
+
             <Screen
                 name='loggedinuser'
                 component={LoggedInUser}
             />
+            
         </Navigator>
     )
 }

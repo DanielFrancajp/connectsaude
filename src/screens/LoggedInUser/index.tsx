@@ -7,11 +7,12 @@ import {
 } from 'react-native'
 
 import { Header } from '../../components/Header'
+import { ImgBackGround } from '../../components/imgBackGround'
 export function LoggedInUser() {
     return (
-        <View style={styles.container}>
-            <Header />
-        </View>
+        <ImgBackGround>
+            <Header isHome={true} />
+        </ImgBackGround>
 
 
 

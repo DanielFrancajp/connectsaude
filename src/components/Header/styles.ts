@@ -2,19 +2,16 @@ import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        padding: 30,
-        alignItems: 'center',
+        paddingHorizontal: 30,
+        paddingTop: 15,
+        paddingBottom: 5,
+        borderBottomWidth: 1,
+        borderBottomColor: '#0B80C8',
+       // alignItems: 'center',
     },
     containerHeader: {
         flexDirection: 'row',
-        justifyContent: 'space-around'
-    },
-    linerBorder: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#0B80C8',
-        marginTop: 65,
-        width: ' 95%',
+        justifyContent: 'space-between'
     },
     buttonBell: {
     },

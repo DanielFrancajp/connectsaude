@@ -10,13 +10,14 @@ import {
 
 interface buttonProps {
     button: string;
+    onPress: () => void;
 }
 
-export function Button({ button}: buttonProps) {
+export function Button({ button, onPress}: buttonProps) {
     return (
 
         <View style={styles.containerButton}>
-            <TouchableOpacity style={styles.button}
+            <TouchableOpacity onPress={onPress} style={styles.button}
                 
             >
                 <Text style={styles.text}>{button}</Text>

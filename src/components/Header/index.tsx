@@ -1,5 +1,5 @@
 import React from 'react'
-import { List, Bell } from 'phosphor-react-native'
+import { List, Bell, CaretLeft } from 'phosphor-react-native'
 import { styles } from './styles'
 
 import {
@@ -8,19 +8,33 @@ import {
     Text
 } from 'react-native'
 
-export function Header() {
+type headerPros = {
+    isHome: boolean;
+}
+export function Header({isHome}: headerPros) {
     return (
         <View style={styles.container}>
-            <View style={styles.containerHeader}>
+
+            {isHome ?
+         <View style={styles.containerHeader}>
+         <TouchableOpacity>
+             <List color="#2A65C8" size={32} weight="duotone" />
+         </TouchableOpacity>
+         <Text>bem vindo</Text>
+         <TouchableOpacity style={styles.buttonBell}>
+             <Bell color="#2A65C8" size={32} />
+         </TouchableOpacity>
+         </View>
+         :
+         <View style={styles.containerHeader}>
                 <TouchableOpacity>
-                    <List color="#2A65C8" size={32} weight="duotone" />
+                <CaretLeft size={32} weight="fill" />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonBell}>
-                    <Bell color="#2A65C8" size={32} />
-                </TouchableOpacity>
-                <View style={styles.linerBorder}>
-                </View>
-            </View>
+                <Text>bem vindo</Text>
+                <View />
+                </View>   
+        }
+
         </View>
     )
 }
