@@ -1,13 +1,12 @@
 import React from "react";
 import {
-    ImageBackground,
     View,
     Text,
     ScrollView
 } from 'react-native'
 
 import { styles } from "./styles";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/HeaderLogo";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ImgBackGround } from '../../components/imgBackGround'

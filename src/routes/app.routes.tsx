@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
+import { LoggedInUser } from '../screens/LoggedInUser';
 import { RecoveryPassoword } from '../screens/RecoverPassword';
 import { Register } from '../screens/Register';
 
@@ -21,6 +22,10 @@ export function AppRoutes() {
             <Screen
                 name='register'
                 component={Register}
+            />
+            <Screen
+                name='loggedinuser'
+                component={LoggedInUser}
             />
         </Navigator>
     )

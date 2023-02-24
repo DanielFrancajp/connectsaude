@@ -2,10 +2,8 @@ import React from 'react'
 
 import {
     ImageBackground,
-    SafeAreaView,
-    KeyboardAvoidingView
+    
 } from 'react-native'
-import { styles } from '../Header/styles'
 
 interface childrenProps {
     children: React.ReactNode
