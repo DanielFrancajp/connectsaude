@@ -3,11 +3,12 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
+        paddingTop:20
+        
     },
     containerInput: {
         width: '100%',
     },
-
     Form: {
         alignItems: 'center',
         justifyContent: 'center',
@@ -34,20 +35,18 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 290,
-        marginTop: -50
+        marginTop: -50,
 
     },
     Logos: {
-        flex: 1,
         flexDirection: 'row',
         marginHorizontal: 10,
-        marginVertical: 100,
+        marginVertical: 130,
         justifyContent: 'space-around'
     },
     imageLogin: {
         alignItems: "center", 
         justifyContent: 'center',
-        marginTop: 30
     }
   
 

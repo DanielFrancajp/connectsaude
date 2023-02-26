@@ -2,8 +2,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../screens/Home';
 import { LoggedInUser } from '../screens/LoggedInUser';
+import { NewScheduling } from '../screens/NewScheduling';
 import { RecoveryPassoword } from '../screens/RecoverPassword';
 import { Register } from '../screens/Register';
+import { Scheduling } from '../screens/Scheduling';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -29,6 +31,17 @@ export function AppRoutes() {
                 name='loggedinuser'
                 component={LoggedInUser}
             />
+
+            <Screen
+                name='Agendamentos'
+                component={Scheduling}
+            />
+            
+            <Screen
+                name='newscheduling'
+                component={NewScheduling}
+            />
+           
             
         </Navigator>
     )

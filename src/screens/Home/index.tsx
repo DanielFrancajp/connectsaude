@@ -34,7 +34,7 @@ export default function Home() {
     return (
 
         <>
-            <ImgBackGround >
+            <ImgBackGround isLogin >
                 <View style={styles.container}>
 
                     <View style={styles.imageLogin}>
@@ -45,7 +45,7 @@ export default function Home() {
 
                     <View>
                         <View style={styles.containerInput}>
-                            <View style={{ paddingTop: 50, paddingLeft: 25 }}>
+                            <View style={{ paddingTop: 20, paddingLeft: 25 }}>
                                 <Text style={styles.text}>
                                     Login
                                 </Text>
@@ -80,8 +80,6 @@ export default function Home() {
                             onPress={handleLoggedInUser}
 
                         />
-
-
 
                         <View style={styles.Form}>
                             <TouchableOpacity style={styles.buttonRegister}

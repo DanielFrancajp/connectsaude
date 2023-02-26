@@ -4,19 +4,25 @@ import {
     ImageBackground,
     
 } from 'react-native'
+import { Header } from '../Header'
 
 interface childrenProps {
     children: React.ReactNode
+    isHome: boolean
+    isLogin?: boolean
 }
 
-export function ImgBackGround({ children }: childrenProps) {
+export function ImgBackGround({ children, isHome, isLogin }: childrenProps) {
     return (
-            <>
-            <ImageBackground style={{ width: '100%', height: '100%' }}
+            
+            <ImageBackground style={{ flex: 1 }}
                 source={require('../../../assets/background.png')}
             >
-                {children}
+            {!isLogin &&
+                 <Header isHome={isHome} />
+            }
+               {children}
             </ImageBackground>
-            </>
+           
     )
 }

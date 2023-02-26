@@ -16,7 +16,9 @@ export function RecoveryPassoword() {
 
     return (
         <>
-            <ImgBackGround>
+            <ImgBackGround
+            
+            >
                 <View style={styles.container}>
 
                     <Header />

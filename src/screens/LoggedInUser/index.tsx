@@ -1,20 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styles } from './styles'
+import { useNavigation } from '@react-navigation/native'
+import { ListItensHome } from "../../Utils/ListItensHome";
+
 
 import {
     View,
     Text,
+    FlatList,
 } from 'react-native'
 
-import { Header } from '../../components/Header'
-import { ImgBackGround } from '../../components/imgBackGround'
+import {
+    ImgBackGround,
+    CardHome
+} from "../../components"
+
 export function LoggedInUser() {
+
+    const navigation = useNavigation()
+
+    function handleScheduling(item: any) {
+        navigation.navigate(item.title)
+    }
+
+
     return (
-        <ImgBackGround>
-            <Header isHome={true} />
+        <ImgBackGround isHome >
+
+            <View style={styles.container}>
+
+                <View style={styles.title} >
+                    <Text style={styles.text}>A medicina na palma da sua mão !</Text>
+                </View>
+
+                <FlatList
+                    data={ListItensHome}
+                    extraData={ListItensHome}
+                    numColumns={3}
+                    renderItem={({ item }) => (
+                        <CardHome
+                            title={item.title}
+                            onPress={() => handleScheduling(item)}
+                        />
+                    )}
+                    keyExtractor={item => item.id}
+                />
+
+
+
+
+            </View>
+
+
+
+
         </ImgBackGround>
-
-
 
     )
 }
