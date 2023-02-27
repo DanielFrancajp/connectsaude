@@ -15,7 +15,7 @@ export function Register() {
     return (
 
         <>
-            <ImgBackGround>
+            <ImgBackGround isLogin>
                 <ScrollView>
                     <View style={styles.container}>
                         <Header />

@@ -34,7 +34,7 @@ export function Header({ isHome, title }: headerPros) {
                     :
                     <View style={styles.containerHeader}>
                         <TouchableOpacity>
-                            <CaretLeft size={32} weight="fill" />
+                            <CaretLeft color="#2A65C8" size={32} weight="thin" />
                         </TouchableOpacity>
                         <Text style={styles.text}>{title}</Text>
                         <View />

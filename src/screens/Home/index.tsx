@@ -34,7 +34,7 @@ export default function Home() {
     return (
 
         <>
-            <ImgBackGround isLogin >
+            <ImgBackGround isLogin={true} >
                 <View style={styles.container}>
 
                     <View style={styles.imageLogin}>

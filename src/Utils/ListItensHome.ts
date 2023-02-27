@@ -9,8 +9,8 @@ import Telemedicina from '../../assets/Telemedicina.svg';
 export const ListItensHome = [
   { id:'1', title:'Agendamentos',  },
   { id:'2', title:'Vacinas', icon: Vacina },
-  { id:'3', title:'Cartao do SUS', icon:Cartao },
-  { id:'4', title:'Meus Exames', icon: Exames },
+  { id:'3', title:'CartaoSus', icon:Cartao },
+  { id:'4', title:'MeusExames', icon: Exames },
   { id:'5', title:'Meu Historico', icon: Historico },
   { id:'6', title:'Telemedicina', icon: Telemedicina },
   { id:'7', title:'Medicamentos',  },

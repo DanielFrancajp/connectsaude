@@ -6,6 +6,9 @@ import { NewScheduling } from '../screens/NewScheduling';
 import { RecoveryPassoword } from '../screens/RecoverPassword';
 import { Register } from '../screens/Register';
 import { Scheduling } from '../screens/Scheduling';
+import { Vaccines } from '../screens/Vaccines';
+import { SusCard } from '../screens/SusCard';
+import { MyExams } from '../screens/MyExams';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -36,13 +39,26 @@ export function AppRoutes() {
                 name='Agendamentos'
                 component={Scheduling}
             />
-            
+
+            <Screen
+                name='Vacinas'
+                component={Vaccines}
+            />
+            <Screen
+                name='CartaoSus'
+                component={SusCard}
+            />
+            <Screen
+                name='MeusExames'
+                component={MyExams}
+            />
+
             <Screen
                 name='newscheduling'
                 component={NewScheduling}
             />
-           
-            
+
+
         </Navigator>
     )
 }

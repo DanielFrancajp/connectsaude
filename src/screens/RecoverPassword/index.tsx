@@ -17,7 +17,8 @@ export function RecoveryPassoword() {
     return (
         <>
             <ImgBackGround
-            
+                isLogin={true}
+
             >
                 <View style={styles.container}>
 
