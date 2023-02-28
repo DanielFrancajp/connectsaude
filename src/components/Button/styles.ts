@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
 
     containerButton: {
         width: '100%',
+
     },
     button: {
         backgroundColor: '#2A65C8',
@@ -11,8 +12,8 @@ export const styles = StyleSheet.create({
         alignContent: 'center',
         justifyContent: 'center',
         borderRadius: 12,
-        margin:30,
-        marginTop:10
+        margin: 30,
+        marginTop: 10
     },
     text: {
         color: '#FFF',
@@ -20,5 +21,12 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
     },
+    containerIcon: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+
+    }
+
 
 })

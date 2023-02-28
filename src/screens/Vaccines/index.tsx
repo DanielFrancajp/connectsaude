@@ -50,6 +50,7 @@ export function Vaccines() {
             <Button
                 button='DOWNLOAD'
                 onPress={handleDownload}
+                icon
             />
 
         </>

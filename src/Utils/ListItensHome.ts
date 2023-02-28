@@ -13,7 +13,5 @@ export const ListItensHome = [
   { id:'4', title:'MeusExames', icon: Exames },
   { id:'5', title:'Meu Historico', icon: Historico },
   { id:'6', title:'Telemedicina', icon: Telemedicina },
-  { id:'7', title:'Medicamentos',  },
-  { id:'7', title:'Doenças Crônicas',  },
-  { id:'8', title:'Alergias',  },
+
  ]

@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 
 import {
     View,
-    TextInput
+    TextInput,
+    Alert
 
 } from 'react-native'
 
@@ -16,38 +17,49 @@ export function NewScheduling() {
 
     const [color, setColor] = useState("")
 
+    function handleDownload() {
+        Alert.alert("Agendamento concluído ")
+    }
+
     return (
+
         <>
             <Header isHome={false}
                 title={"Hospital Santa Isabel"}
             />
             <View style={styles.container}>
+                <View>
 
-                <Input
-                    placeHolder='Endereço'
-                />
-                <Input
-                    placeHolder='Tipo de exame'
-                />
-                <Input
-                    placeHolder='dd//mm/aaaa'
-                />
-            </View>
+                    <Input
+                        placeHolder='Endereço'
+                    />
+                    <Input
+                        placeHolder='Tipo de exame'
+                    />
+                    <Input
+                        placeHolder='dd//mm/aaaa'
+                    />
 
-            <View style={styles.content}>
+                    <View style={styles.content}>
 
-                <TextInput
-                    style={styles.input}
-                    placeholder='Descrição do exame'
-                    placeholderTextColor="#2A65C8"
-                    onChangeText={setColor}
-                />
+                        <TextInput
+                            style={styles.input}
+                            placeholder='Descrição do exame'
+                            placeholderTextColor="#2A65C8"
+                            onChangeText={setColor}
+                            multiline={true}
+                            textAlignVertical={"top"}
+                        />
+
+                    </View>
+                </View>
+
+
                 <Button
-                button='Confirmar Agendamento'
-                
+                    button='Confirmar Agendamento'
+                    onPress={handleDownload}
+
                 />
-            </View>
-            <View style={styles.contentButton}>
             </View>
 
         </>

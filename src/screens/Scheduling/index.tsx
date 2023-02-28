@@ -47,40 +47,34 @@ export function Scheduling() {
                     <Text style={styles.text}> Status</Text>
                 </View>
 
-                <View style={styles.contentSpecifications}>
+                <TouchableOpacity style={styles.contentSpecifications}>
                     <Text style={styles.text}> 20/09/2022 </Text>
-                    <TouchableOpacity>
-                        <View style={{ marginRight: 50 }}>
-                            <Text style={styles.text}>Consulta</Text>
-                        </View>
-                    </TouchableOpacity>
+                    <View style={{ marginRight: 50 }}>
+                        <Text style={styles.text}>Consulta</Text>
+                    </View>
                     <Circle color='red' size={28} weight="fill" />
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.contentSpecifications}>
+                <TouchableOpacity style={styles.contentSpecifications}>
                     <Text style={styles.text}> 15/11/2022</Text>
-                    <TouchableOpacity>
-                        <View style={{ marginRight: 60 }}>
-                            <Text style={styles.text}> Raio-X </Text>
-                        </View>
-                    </TouchableOpacity>
+                    <View style={{ marginRight: 60 }}>
+                        <Text style={styles.text}> Raio-X </Text>
+                    </View>
                     <Circle color='green' size={28} weight="fill" />
 
 
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.contentSpecifications}>
+                <TouchableOpacity style={styles.contentSpecifications}>
                     <Text style={styles.text}> 08/01/2023</Text>
-                    <TouchableOpacity>
-                        <View style={{ marginRight: 30 }}>
-                            <Text style={styles.text}>Endoscopia</Text>
-                        </View>
-                    </TouchableOpacity>
+                    <View style={{ marginRight: 30 }}>
+                        <Text style={styles.text}>Endoscopia</Text>
+                    </View>
                     <Circle color='gray' size={28} weight="fill" />
 
 
 
-                </View>
+                </TouchableOpacity>
 
             </View>
         </>
