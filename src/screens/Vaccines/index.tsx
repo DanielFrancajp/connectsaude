@@ -44,13 +44,13 @@ export function Vaccines() {
                 <Text style={styles.textVaccines}> Antitetânica ---------- 15/04/2019</Text>
                 <Text style={styles.textVaccines}> Antitetânica ---------- 10/03/2021</Text>
                 <Text style={styles.textVaccines}> Antitetânica ---------- 17/04/2022</Text>
-
+                
+              
 
             </View>
             <Button
                 button='DOWNLOAD'
                 onPress={handleDownload}
-                icon
             />
 
         </>

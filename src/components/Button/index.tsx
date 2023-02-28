@@ -35,6 +35,7 @@ export function Button({ button, onPress, icon }: buttonProps) {
 
                         }
                     </View>
+                    <View/>
                 </View>
 
             </TouchableOpacity>
