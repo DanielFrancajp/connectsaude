@@ -24,7 +24,7 @@ export function Scheduling() {
 
             <Header
                 isHome={false}
-                title='Agendamentos' />
+                title='AGENDAMENTOS' />
 
             <View style={styles.container}>
 

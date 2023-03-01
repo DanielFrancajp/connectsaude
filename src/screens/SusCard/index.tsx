@@ -19,7 +19,7 @@
 
             <Header
                 isHome={false}
-                title="Cartão do SUS"
+                title="CARTÃO DO SUS"
             />
 
             <View style={styles.container}>
@@ -46,6 +46,7 @@
             <Button 
              button='Donwload '
              onPress={handleDownload}
+             icon
             />
 
 

@@ -22,7 +22,7 @@ export function MyExams() {
 
             <Header
                 isHome={false}
-                title='Meus Exames' />
+                title='MEUS EXAMES' />
 
             <View style={styles.container}>
 

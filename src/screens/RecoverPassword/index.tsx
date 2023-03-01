@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import {
     View,
     Text,
+    Alert,
 }
     from 'react-native'
 import { styles } from './styles'
@@ -14,6 +15,9 @@ import { ImgBackGround } from '../../components/imgBackGround'
 
 export function RecoveryPassoword() {
 
+    function handleRecoveryPassworld() {
+        Alert.alert('Enviamos um e-mail para redefinição de sua senha! ')
+    }
     return (
         <>
             <ImgBackGround
@@ -34,6 +38,7 @@ export function RecoveryPassoword() {
 
                     <Button
                         button='Enviar'
+                        onPress={handleRecoveryPassworld}
                     />
                 </View>
             </ImgBackGround>

@@ -19,7 +19,7 @@ export function Vaccines() {
     return (
         <>
             <Header
-                title='Carteira de vacinação'
+                title='CARTEIRA DE VACINAÇÃO'
                 isHome={false} />
 
             <View style={styles.container}>
@@ -51,6 +51,7 @@ export function Vaccines() {
             <Button
                 button='DOWNLOAD'
                 onPress={handleDownload}
+                icon
             />
 
         </>

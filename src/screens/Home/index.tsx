@@ -29,14 +29,15 @@ export default function Home() {
 
     function handleLoggedInUser() {
         navigation.navigate('loggedinuser')
+        Alert.alert('Usúario logado com sucesso!')
     }
-   
+
 
 
     return (
 
         <>
-            <ImgBackGround isLogin={true} >
+            <ImgBackGround isLogin={true} isHome >
                 <View style={styles.container}>
 
                     <View style={styles.imageLogin}>

@@ -10,6 +10,7 @@ import { Vaccines } from '../screens/Vaccines';
 import { SusCard } from '../screens/SusCard';
 import { MyExams } from '../screens/MyExams';
 import { MyHistoric } from '../screens/MyHistoric';
+import { Others } from '../screens/Others';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -57,6 +58,10 @@ export function AppRoutes() {
             <Screen
                 name='MeuHistorico'
                 component={MyHistoric}
+            />
+             <Screen
+                name='Outros'
+                component={Others}
             />
 
             <Screen

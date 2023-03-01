@@ -41,7 +41,6 @@ export function LoggedInUser() {
                         <CardHome
                             title={item.title}
                             onPress={() => handleScheduling(item)}
-
                         />
 
 

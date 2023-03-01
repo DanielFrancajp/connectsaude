@@ -25,7 +25,7 @@ export function NewScheduling() {
 
         <>
             <Header isHome={false}
-                title={"Hospital Santa Isabel"}
+                title={"HOSPITAL SANTA ISABEL"}
             />
             <View style={styles.container}>
                 <View>
