@@ -2,7 +2,8 @@ import React from "react";
 import {
     View,
     Text,
-    ScrollView
+    ScrollView,
+    Alert
 } from 'react-native'
 
 import { styles } from "./styles";
@@ -12,6 +13,11 @@ import { Button } from "../../components/Button";
 import { ImgBackGround } from '../../components/imgBackGround'
 
 export function Register() {
+
+    function handleRegister() {
+        Alert.alert('Usuário cadastrado com sucesso!')
+    }
+
     return (
 
         <>
@@ -60,6 +66,7 @@ export function Register() {
 
                         <Button
                             button="Cadastrar"
+                            onPress={handleRegister}
                         />
 
                     </View>

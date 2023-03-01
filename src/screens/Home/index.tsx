@@ -6,6 +6,7 @@ import {
     TouchableOpacity,
     View,
     Text,
+    Alert,
 } from "react-native";
 import { styles } from './styles'
 
@@ -29,6 +30,7 @@ export default function Home() {
     function handleLoggedInUser() {
         navigation.navigate('loggedinuser')
     }
+   
 
 
     return (

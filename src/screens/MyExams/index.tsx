@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 
 import { CardHome, Header } from '../../components';
-import { Circle } from 'phosphor-react-native';
 import { styles } from './styles';
 
 export function MyExams() {

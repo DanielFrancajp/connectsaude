@@ -11,7 +11,7 @@ export const ListItensHome = [
   { id:'2', title:'Vacinas', icon: Vacina },
   { id:'3', title:'CartaoSus', icon:Cartao },
   { id:'4', title:'MeusExames', icon: Exames },
-  { id:'5', title:'Meu Historico', icon: Historico },
+  { id:'5', title:'MeuHistorico', icon: Historico },
   { id:'6', title:'Telemedicina', icon: Telemedicina },
 
  ]
