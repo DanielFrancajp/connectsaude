@@ -5,6 +5,7 @@ import {
     ScrollView,
     Alert
 } from 'react-native'
+import { useNavigation } from "@react-navigation/native";
 
 import { styles } from "./styles";
 import { Header } from "../../components/HeaderLogo";
@@ -14,6 +15,10 @@ import { ImgBackGround } from '../../components/imgBackGround'
 
 export function Register() {
 
+    const navigation= useNavigation();
+
+ 
+
     function handleRegister() {
         Alert.alert('Usuário cadastrado com sucesso!')
     }
@@ -21,7 +26,7 @@ export function Register() {
     return (
 
         <>
-            <ImgBackGround isLogin>
+            <ImgBackGround isLogin >
                 <ScrollView>
                     <View style={styles.container}>
                         <Header />

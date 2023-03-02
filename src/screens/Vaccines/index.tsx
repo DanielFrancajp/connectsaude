@@ -1,5 +1,5 @@
 import React from 'react'
-import { FilePdf } from 'phosphor-react-native'
+import { useNavigation } from '@react-navigation/native';
 
 import { View, Text, Alert } from 'react-native'
 
@@ -9,18 +9,26 @@ import { Button } from '../../components/Button'
 
 export function Vaccines() {
 
+    const navigation = useNavigation()
+
     function handleDownload() {
         Alert.alert("Download pdf concluído!")
     }
 
-   
+    function handleGoBack() {
+        navigation.goBack()
+    }
+
+
 
 
     return (
         <>
             <Header
                 title='CARTEIRA DE VACINAÇÃO'
-                isHome={false} />
+                isHome={false}
+                onPress={handleGoBack}
+            />
 
             <View style={styles.container}>
                 <Text style={styles.textTitle}>
@@ -44,8 +52,8 @@ export function Vaccines() {
                 <Text style={styles.textVaccines}> Antitetânica ---------- 15/04/2019</Text>
                 <Text style={styles.textVaccines}> Antitetânica ---------- 10/03/2021</Text>
                 <Text style={styles.textVaccines}> Antitetânica ---------- 17/04/2022</Text>
-                
-              
+
+
 
             </View>
             <Button

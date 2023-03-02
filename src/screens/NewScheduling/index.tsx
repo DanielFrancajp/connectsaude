@@ -6,6 +6,7 @@ import {
     Alert
 
 } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 import { styles } from './styles'
 
@@ -17,8 +18,14 @@ export function NewScheduling() {
 
     const [color, setColor] = useState("")
 
+    const navigation = useNavigation()
+
     function handleDownload() {
         Alert.alert("Agendamento concluído ")
+    }
+
+    function handleGoBack(){
+        navigation.goBack()
     }
 
     return (
@@ -26,6 +33,7 @@ export function NewScheduling() {
         <>
             <Header isHome={false}
                 title={"HOSPITAL SANTA ISABEL"}
+                onPress={handleGoBack}
             />
             <View style={styles.container}>
                 <View>

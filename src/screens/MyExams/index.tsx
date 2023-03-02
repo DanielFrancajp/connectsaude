@@ -6,7 +6,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 
-import { CardHome, Header } from '../../components';
+import { Header } from '../../components';
 import { styles } from './styles';
 
 export function MyExams() {
@@ -14,6 +14,7 @@ export function MyExams() {
     const navigation = useNavigation()
 
     function handleNewScheduling() {
+        navigation.goBack()
     }
 
 
@@ -22,7 +23,10 @@ export function MyExams() {
 
             <Header
                 isHome={false}
-                title='MEUS EXAMES' />
+                title='MEUS EXAMES'
+                onPress={handleNewScheduling}
+                />
+
 
             <View style={styles.container}>
 

@@ -1,5 +1,5 @@
     import React from 'react'
-
+    import { useNavigation } from '@react-navigation/native'
     import { View, Text, Image,Alert } from 'react-native'
     import { styles } from './styles'
 
@@ -8,6 +8,12 @@
 
 
     export function SusCard() {
+
+        const navigation = useNavigation();
+
+        function handleGoBack(){
+            navigation.goBack()
+        }
 
         function handleDownload() {
             Alert.alert("Download pdf concluído!")
@@ -20,6 +26,7 @@
             <Header
                 isHome={false}
                 title="CARTÃO DO SUS"
+                onPress={handleGoBack}
             />
 
             <View style={styles.container}>

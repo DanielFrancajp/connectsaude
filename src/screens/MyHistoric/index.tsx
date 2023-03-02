@@ -8,11 +8,16 @@ export function MyHistoric() {
 
     const navigation = useNavigation()
 
+    function handleGoBack() {
+        navigation.goBack()
+    }
+
     return (
         <>
             <Header
                 title="DOENÇAS E ALERGIAS"
                 isHome={false}
+                onPress={handleGoBack}
             />
 
             <View style={styles.container}>

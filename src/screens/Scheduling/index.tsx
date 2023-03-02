@@ -17,14 +17,17 @@ export function Scheduling() {
     function handleNewScheduling() {
         navigation.navigate('newscheduling')
     }
-
-
+    function handleGoBack() {
+        navigation.goBack()
+    }
     return (
         <>
 
             <Header
                 isHome={false}
-                title='AGENDAMENTOS' />
+                title='AGENDAMENTOS' 
+                onPress={handleGoBack}
+                />
 
             <View style={styles.container}>
 

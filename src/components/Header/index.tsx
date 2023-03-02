@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 import { List, Bell, CaretLeft } from 'phosphor-react-native'
 import { styles } from './styles'
 
@@ -11,8 +12,13 @@ import {
 type headerPros = {
     isHome: boolean;
     title: string;
+    onPress?: () => void;
 }
-export function Header({ isHome, title }: headerPros) {
+
+
+
+export function Header({ isHome, title, onPress }: headerPros) {
+
     return (
         <View style={styles.container}>
 
@@ -33,7 +39,7 @@ export function Header({ isHome, title }: headerPros) {
                     </View>
                     :
                     <View style={styles.containerHeader}>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={onPress}>
                             <CaretLeft color="#2A65C8" size={32} weight="thin" />
                         </TouchableOpacity>
                         <Text style={styles.text}>{title}</Text>
