@@ -11,10 +11,14 @@ export const styles = StyleSheet.create({
         paddingLeft: 20,
         borderBottomWidth: 1,
         borderBottomColor: '#0B80C8',
-
     },
     text: {
         color: '#2A65C8',
+        fontWeight: 'bold',
+        fontSize: 15,
+    },
+    textList: {
+        color: '#ffffff',
         fontWeight: 'bold',
         fontSize: 15,
     },
@@ -22,11 +26,23 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        padding: 20,
-        margin: 5,
+        padding: 15,
+        marginHorizontal: 12,
+        marginVertical: 7,
         borderWidth: 1,
         borderBottomColor: '#0B80C8',
+        borderRadius: 12,
+        backgroundColor: "#2A65C8",
+        elevation: 8
     },
-   
+    contentHeader: {
+        alignItems: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: 20,
+        paddingHorizontal: 25,
+        borderBottomWidth: 1,
+        borderBottomColor: '#0B80C8',
+    },
 
 })

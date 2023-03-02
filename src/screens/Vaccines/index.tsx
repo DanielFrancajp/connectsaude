@@ -37,22 +37,37 @@ export function Vaccines() {
                 <Text style={styles.textTitle}>
                     unidade PSF torre
                 </Text>
+                <View style={styles.viewText} >
+                    <Text style={styles.textVaccines}>Febre a.</Text>
+                    <View style={styles.viewLine} />
+                    <Text style={styles.textVaccines}>10 UNDS</Text>
+                </View>
 
-                <Text style={styles.textVaccines}> Dengue ------------------- 250 UNDS</Text>
-                <Text style={styles.textVaccines}> Gripe ----------------------- 200 UNDS</Text>
-                <Text style={styles.textVaccines}> Hepatite ------------------ 180 UNDS</Text>
-                <Text style={styles.textVaccines}> Febre amarela --------- 125 UNDS</Text>
-                <Text style={styles.textVaccines}> Covid-19 ------------------ 100 UNDS</Text>
+
+                <View style={styles.viewText} >
+                    <Text style={styles.textVaccines}>Antitetanica</Text>
+                    <View style={styles.viewLine} />
+                    <Text style={styles.textVaccines}>07 UNDS</Text>
+                </View>
+                <View style={styles.viewText} >
+                    <Text style={styles.textVaccines}>Rubeola</Text>
+                    <View style={styles.viewLine} />
+                    <Text style={styles.textVaccines}>05 UNDS</Text>
+                </View>
+
 
                 <View style={{ marginTop: 25 }}>
                     <Text style={styles.textTitle}>
                         Lista de Vacinas já aplicadas
                     </Text>
                 </View>
-                <Text style={styles.textVaccines}> Antitetânica ---------- 15/04/2019</Text>
-                <Text style={styles.textVaccines}> Antitetânica ---------- 10/03/2021</Text>
-                <Text style={styles.textVaccines}> Antitetânica ---------- 17/04/2022</Text>
 
+
+                <View style={styles.viewText} >
+                    <Text style={styles.textVaccines}>Rubeola</Text>
+                    <View style={styles.viewLine} />
+                    <Text style={styles.textVaccines}>05 UNDS</Text>
+                </View>
 
 
             </View>

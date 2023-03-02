@@ -38,9 +38,9 @@ export function Header({ isHome, title, onPress }: headerPros) {
                         </TouchableOpacity>
                     </View>
                     :
-                    <View style={styles.containerHeader}>
+                    <View style={styles.containerHeader1}>
                         <TouchableOpacity onPress={onPress}>
-                            <CaretLeft color="#2A65C8" size={32} weight="thin" />
+                            <CaretLeft color="#2A65C8" size={27} weight="bold" />
                         </TouchableOpacity>
                         <Text style={styles.text}>{title}</Text>
                         <View />

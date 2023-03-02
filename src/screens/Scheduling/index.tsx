@@ -42,7 +42,7 @@ export function Scheduling() {
                     </View>
                 </View>
 
-                <View style={styles.contentSpecifications}>
+                <View style={styles.contentHeader}>
                     <View style={{ marginLeft: 15 }}>
                         <Text style={styles.text}> Data</Text>
                     </View>
@@ -51,17 +51,17 @@ export function Scheduling() {
                 </View>
 
                 <TouchableOpacity style={styles.contentSpecifications}>
-                    <Text style={styles.text}> 20/09/2022 </Text>
+                    <Text style={styles.textList}> 20/09/2022 </Text>
                     <View style={{ marginRight: 50 }}>
-                        <Text style={styles.text}>Consulta</Text>
+                        <Text style={styles.textList}>Consulta</Text>
                     </View>
                     <Circle color='red' size={28} weight="fill" />
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.contentSpecifications}>
-                    <Text style={styles.text}> 15/11/2022</Text>
+                    <Text style={styles.textList}> 15/11/2022</Text>
                     <View style={{ marginRight: 60 }}>
-                        <Text style={styles.text}> Raio-X </Text>
+                        <Text style={styles.textList}> Raio-X </Text>
                     </View>
                     <Circle color='green' size={28} weight="fill" />
 
@@ -69,9 +69,9 @@ export function Scheduling() {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.contentSpecifications}>
-                    <Text style={styles.text}> 08/01/2023</Text>
+                    <Text style={styles.textList}> 08/01/2023</Text>
                     <View style={{ marginRight: 30 }}>
-                        <Text style={styles.text}>Endoscopia</Text>
+                        <Text style={styles.textList}>Endoscopia</Text>
                     </View>
                     <Circle color='gray' size={28} weight="fill" />
 

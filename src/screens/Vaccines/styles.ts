@@ -1,3 +1,4 @@
+import { AlignRight } from 'phosphor-react-native'
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
@@ -7,24 +8,32 @@ export const styles = StyleSheet.create({
         paddingTop: 5,
         margin: 14,
         backgroundColor: '#2A65C8',
-        borderRadius: 15,
-        
-    },    
+        borderRadius: 15
+    },
     textTitle: {
         color: '#FFF',
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom:5
+        marginBottom: 5
     },
-    textVaccines:{
+    textVaccines: {
         color: '#FFF',
         fontSize: 24,
-        marginTop:16,
-        marginBottom:5
     },
-    viewButton:{
-        alignItems:'center',
-        marginLeft:250,
-        }
+   
+    viewText: {
+        flexDirection: "row",
+        width: "100%",
+        justifyContent: 'space-between',
+        paddingHorizontal: 15,
+        alignItems: "center",
+    },
+    viewLine: {
+        borderWidth: 2,
+        borderColor: "#ffffff",
+        width: "20%",
+        height: 1,
+        justifyContent: 'center'
+    }
 
 })

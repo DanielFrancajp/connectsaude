@@ -15,6 +15,12 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: "center"
     },
+    containerHeader1: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: "center",
+        padding: 7
+    },
     containerWelcome: {
         flexDirection: 'column',
     },
