@@ -4,7 +4,6 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
         paddingTop: 5,
         margin: 14,
         backgroundColor: '#2A65C8',
@@ -14,19 +13,22 @@ export const styles = StyleSheet.create({
         color: '#FFF',
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: 5
+        textAlign: 'center'
     },
     textVaccines: {
         color: '#FFF',
         fontSize: 24,
+        marginHorizontal: 16,
     },
-   
+
     viewText: {
         flexDirection: "row",
         width: "100%",
         justifyContent: 'space-between',
         paddingHorizontal: 15,
         alignItems: "center",
+        marginTop: 10,
+        marginBottom: 10
     },
     viewLine: {
         borderWidth: 2,

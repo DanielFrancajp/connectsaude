@@ -1,7 +1,8 @@
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
+import { ShieldCheck } from 'phosphor-react-native'
 
-import { View, Text, Alert } from 'react-native'
+import { View, Text, Alert, FlatList } from 'react-native'
 
 import { styles } from './styles'
 import { Header } from '../../components'
@@ -19,7 +20,13 @@ export function Vaccines() {
         navigation.goBack()
     }
 
-
+    const data = [
+        { id: '1', Title: 'Rubeola', date: '20/05/2012', icon: 'ShieldCheck' },
+        { id: '2', Title: 'Gripe', date: '10/07/2015' },
+        { id: '3', Title: 'Téteno', date: '18/04/2012' },
+        { id: '4', Title: 'Rubeola', date: '20/05/2012' },
+        { id: '5', Title: 'Rubeola', date: '20/05/2012' },
+    ]
 
 
     return (
@@ -31,43 +38,26 @@ export function Vaccines() {
             />
 
             <View style={styles.container}>
-                <Text style={styles.textTitle}>
-                    Lista de Vacinas disponíveis
-                </Text>
-                <Text style={styles.textTitle}>
-                    unidade PSF torre
-                </Text>
-                <View style={styles.viewText} >
-                    <Text style={styles.textVaccines}>Febre a.</Text>
-                    <View style={styles.viewLine} />
-                    <Text style={styles.textVaccines}>10 UNDS</Text>
-                </View>
 
-
-                <View style={styles.viewText} >
-                    <Text style={styles.textVaccines}>Antitetanica</Text>
-                    <View style={styles.viewLine} />
-                    <Text style={styles.textVaccines}>07 UNDS</Text>
-                </View>
-                <View style={styles.viewText} >
-                    <Text style={styles.textVaccines}>Rubeola</Text>
-                    <View style={styles.viewLine} />
-                    <Text style={styles.textVaccines}>05 UNDS</Text>
-                </View>
-
-
-                <View style={{ marginTop: 25 }}>
+                <View style={{ marginTop: 10 }}>
                     <Text style={styles.textTitle}>
                         Lista de Vacinas já aplicadas
                     </Text>
                 </View>
 
+                <View style={styles.viewText}>
+                    <FlatList
+                        data={data}
+                        extraData={data}
+                        renderItem={({ item }) => (
+                            
+                            <Text style={styles.textVaccines}>{item.Title} {item.date}</Text>
 
-                <View style={styles.viewText} >
-                    <Text style={styles.textVaccines}>Rubeola</Text>
-                    <View style={styles.viewLine} />
-                    <Text style={styles.textVaccines}>05 UNDS</Text>
+                        )}
+                        keyExtrator={item => item.id}
+                    />
                 </View>
+
 
 
             </View>
