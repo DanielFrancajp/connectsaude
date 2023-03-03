@@ -14,6 +14,11 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 15,
     },
+    textList: {
+        color: '#ffffff',
+        fontWeight: 'bold',
+        fontSize: 15,
+    },
     
     contentData:{
         alignItems: 'center',
@@ -28,12 +33,15 @@ export const styles = StyleSheet.create({
     contentSpecifications: {
         alignItems: 'center',
         flexDirection: 'row',
-        justifyContent: 'space-around',
-        padding: 20,
-        margin: 5,
+        justifyContent: 'space-between',
+        padding: 15,
+        marginHorizontal: 12,
+        marginVertical: 7,
         borderWidth: 1,
         borderBottomColor: '#0B80C8',
-        borderRadius:12
+        borderRadius: 12,
+        backgroundColor: "#2A65C8",
+        elevation: 8
     },
    
 

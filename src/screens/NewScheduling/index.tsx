@@ -64,7 +64,7 @@ export function NewScheduling() {
 
 
                 <Button
-                    button='Confirmar Agendamento'
+                    button='CONFIRMAR AGENDAMENTO'
                     onPress={handleDownload}
 
                 />

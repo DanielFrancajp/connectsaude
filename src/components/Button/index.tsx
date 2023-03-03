@@ -31,7 +31,7 @@ export function Button({ button, onPress, icon }: buttonProps) {
                     </View>
                     <View>
                         {icon &&
-                            <DownloadSimple color="red" size={32} weight="fill" />
+                            <DownloadSimple color="white" size={32} weight="fill" />
 
                         }
                     </View>

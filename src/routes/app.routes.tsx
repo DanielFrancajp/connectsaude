@@ -12,6 +12,7 @@ import { MyExams } from '../screens/MyExams';
 import { MyHistoric } from '../screens/MyHistoric';
 import { Others } from '../screens/Others';
 import { EletronicMedicalRecord } from '../screens/ElectronicMedicalRecord';
+import { Medicines } from '../screens/Medicines';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -73,6 +74,10 @@ export function AppRoutes() {
             <Screen
                 name='eletronicmedicalrecord'
                 component={EletronicMedicalRecord}
+            />
+            <Screen
+                name='medicines'
+                component={Medicines}
             />
 
 

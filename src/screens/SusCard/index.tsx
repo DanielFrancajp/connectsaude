@@ -51,7 +51,7 @@
             </View>
 
             <Button 
-             button='Donwload '
+             button='DOWNLOAD '
              onPress={handleDownload}
              icon
             />

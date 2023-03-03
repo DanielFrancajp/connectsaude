@@ -19,11 +19,21 @@ export function Others() {
         navigation.navigate('eletronicmedicalrecord')
     }
 
+    function handleMedicine(){
+        navigation.navigate('medicines')
+    }
+
+    function goBack(){
+        navigation.goBack()
+    }
+
 
     return (
         <>
             <Header
-                isHome={true}
+                isHome={false}
+                title='OUTROS'
+                onPress={goBack}
                 
             />
             <View style={styles.container}>
@@ -34,6 +44,7 @@ export function Others() {
 
                 <CardHome
                     title='Medicamentos'
+                    onPress={handleMedicine}
                 />
             </View>
         </>
